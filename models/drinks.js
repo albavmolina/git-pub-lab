@@ -1,4 +1,3 @@
-// for now this will act as our database
 const drinks = [
     {
       name: "cruddy mary",
@@ -41,3 +40,4 @@ const drinks = [
       image: "https://i.imgur.com/MbVdwZz.jpg",
     },
   ]
+  module.exports = drinks

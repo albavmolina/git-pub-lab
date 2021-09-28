@@ -4,11 +4,20 @@
 // set express()to a variable
 const app = express();
 
+// require database and set up dependencies 
+const drinks = require('./models/drinks.js')
+
 // include a get route / that will res.send('Welcome to the Gitpub App!');so that when you got to localhost:3000, you will see Welcome to the Gitpub App!
 
 app.get('/', (req, res) => {
     res.send(' Welcome to the Gitpub App!');
 })
+
+app.get("/drinks/", (req, res) => {
+    res.render("drinks_index.ejs", {
+       drink: drinks,
+    });
+});
 
 // set a variable of port to 3000
 const port = 3000;
