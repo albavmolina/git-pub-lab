@@ -19,7 +19,11 @@ app.get("/drinks/", (req, res) => {
     });
 });
 
-
+app.get('/drinks/:id', (req, res) => {
+    drinks[req.params.id];
+    res.send(req.params.id)
+    
+})
 
 
 
