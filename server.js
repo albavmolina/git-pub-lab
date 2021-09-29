@@ -20,21 +20,11 @@ app.get("/drinks/", (req, res) => {
 });
 
 app.get('/drinks/:id', (req, res) => {
-    drinks[req.params.id];
-    res.send(req.params.id)
-    
-})
-
-
-
-
-
-
-
-
-
-
-
+        drinks[req.params.id];
+        res.render('drinks_show.ejs', {
+        drink:drinks[req.params.id]
+        });
+        });
 // set a variable of port to 3000
 const port = 3000;
 
