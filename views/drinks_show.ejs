@@ -7,14 +7,17 @@
     <title>Drinks App</title>
 </head>
 <body>
-    <h1> Fruits show page</h1>
+    <h1> At foo bar</h1>
+    <h2> The name of this drink is <%= drink.name %> </h2>
+    <h3> The price of this drink is <%= drink.price %> </h3>
+    <img src="<%=drink.image%>"><br>
 <!-- These are EJS tags  -->
 <!-- Use equal signs when accessing a single value to display -->
-    The name of this drink is <%= drink.name %>
-    The price of this drink is <%= drink.price %>
+    
+    
 
     <!-- this a tag sends us back to our index page using the route that is in our server -->
-     <a href="/drinks">Back to Index</a>
+    <br> <a href="/drinks">Back to Index</a>
 
     </body>
   </html> 
